@@ -1,0 +1,25 @@
+.btn {
+  display: inline-flex;
+  padding: 20px 50px;
+
+  color: $color-default-white;
+
+  background-color: $color-gold;
+  border: none;
+  cursor: pointer;
+
+  font-size: 24px;
+
+  border-radius: 10px;
+
+  transition: all $trans-default;
+
+  @include vp-639 {
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  @include hover-focus {
+    color: $color-dark-grey;
+  }
+}
