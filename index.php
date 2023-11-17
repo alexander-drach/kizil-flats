@@ -17,6 +17,9 @@
 			<button class="btn btn-primary" type="button">Забронировать</button>
 		</div>
 	</section>
+	<div class="map map--main">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A51b774739e189635a30f4e564472275b0320ebc28b3b71f92d4f7da0486d9d96&amp;source=constructor"></iframe>
+	</div>
 	<div class="filter">
 		<ul class="list">
 			<li>

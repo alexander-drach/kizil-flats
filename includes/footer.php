@@ -12,7 +12,7 @@
                     <a href="#">Правила проживания</a>
                 </li>
                 <li class="footer__menu__item">
-                    <a href="#">Бронирование и оплата</a>
+                    <a href="page-booking.php">Бронирование и оплата</a>
                 </li>
             </ul>
             <ul class="list footer__contact">

@@ -21,9 +21,7 @@
 
     &.open {
         .hamb {
-            width: 116px;
             background-image: url("../img/svg/icon-close.svg");
-            background-position: left 0;
         }
 
         .nav {
@@ -168,14 +166,14 @@
 
 .hamb {
     display: none;
-    width: 23px;
+    width: 116px;
     height: 17px;
     border: none;
     background-color: transparent;
     padding: 0;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: left 0 center;
     background-image: url("../img/svg/icon-hamb.svg");
     flex-shrink: 0;
 

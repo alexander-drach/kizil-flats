@@ -26,7 +26,7 @@
                                 <a href="#">Правила проживания</a>
                             </li>
                             <li class="main-menu__item">
-                                <a href="#">Бронирование и оплата</a>
+                                <a href="page-booking.php">Бронирование и оплата</a>
                             </li>
                         </ul>
                         <ul class="list header__contact">

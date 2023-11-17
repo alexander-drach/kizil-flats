@@ -483,6 +483,28 @@ p {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 9px;
+  border-bottom: 6px solid #ffa724;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 639px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
 p {
   margin-bottom: 10px;
 }
@@ -1276,6 +1298,30 @@ p:last-child {
 .list--main li:hover .card__title {
   color: #ffa724;
 }
+.list--square-small li {
+  position: relative;
+  margin-bottom: 15px;
+}
+@media (max-width: 1023px) {
+  .list--square-small li {
+    padding-left: 20px;
+  }
+}
+.list--square-small li::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: -15px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #ffa724;
+}
+@media (max-width: 1023px) {
+  .list--square-small li::before {
+    left: 0;
+  }
+}
 
 .header {
   position: fixed;
@@ -1301,9 +1347,7 @@ p:last-child {
   color: #ffa724;
 }
 .header.open .hamb {
-  width: 116px;
   background-image: url("../img/svg/icon-close.svg");
-  background-position: left 0;
 }
 .header.open .nav {
   opacity: 1;
@@ -1485,14 +1529,14 @@ p:last-child {
 
 .hamb {
   display: none;
-  width: 23px;
+  width: 116px;
   height: 17px;
   border: none;
   background-color: transparent;
   padding: 0;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: left 0 center;
   background-image: url("../img/svg/icon-hamb.svg");
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1873,6 +1917,58 @@ p:last-child {
 
 .card__price span {
   font-weight: bold;
+}
+
+.map {
+  width: 100%;
+}
+.map iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.map--main {
+  height: 560px;
+}
+
+.booking-content h2 {
+  text-align: center;
+}
+
+.booking-content__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1023px) {
+  .booking-content__inner {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 639px) {
+  .booking-content__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.booking-desc {
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.pay-desc {
+  width: 100%;
 }
 
 /* @mixin hover-focus {

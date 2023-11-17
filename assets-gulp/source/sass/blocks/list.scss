@@ -34,4 +34,30 @@
             }
         }
     }
+
+    &--square-small {
+        li {
+            position: relative;
+            margin-bottom: 15px;
+
+            @include vp-1023 {
+                padding-left: 20px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0.5em;
+                left: -15px;
+                display: block;
+                width: 7px;
+                height: 7px;
+                background-color: $color-gold;
+
+                @include vp-1023 {
+                    left: 0;
+                }
+            }
+        }
+    }
 }
