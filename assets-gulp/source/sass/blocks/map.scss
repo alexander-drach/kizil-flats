@@ -1,6 +1,7 @@
 .map {
     width: 100%;
 
+
     iframe {
         height: 100%;
         width: 100%;
@@ -8,6 +9,8 @@
     }
 
     &--main {
-        height: 560px;        
+        border-top: 5px solid $color-middle-grey;
+        border-bottom: 5px solid $color-middle-grey;
+        height: 560px;
     }
 }

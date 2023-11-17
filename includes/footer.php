@@ -6,10 +6,10 @@
             </a>
             <ul class="list footer__menu">
                 <li class="footer__menu__item">
-                    <a href="#">О нас</a>
+                    <a href="page-about.php">О нас</a>
                 </li>
                 <li class="footer__menu__item">
-                    <a href="#">Правила проживания</a>
+                    <a href="page-rules.php">Правила проживания</a>
                 </li>
                 <li class="footer__menu__item">
                     <a href="page-booking.php">Бронирование и оплата</a>

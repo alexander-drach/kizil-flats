@@ -20,10 +20,10 @@
                     <nav class="nav">
                         <ul class="list main-menu">
                             <li class="main-menu__item">
-                                <a href="#">О нас</a>
+                                <a href="page-about.php">О нас</a>
                             </li>
                             <li class="main-menu__item">
-                                <a href="#">Правила проживания</a>
+                                <a href="page-rules.php">Правила проживания</a>
                             </li>
                             <li class="main-menu__item">
                                 <a href="page-booking.php">Бронирование и оплата</a>
