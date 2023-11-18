@@ -43,7 +43,7 @@
 				
 				<?php for($i = 0; $i < 7; $i++) :?>
 				<li>
-					<a href="#">
+					<a href="single.php">
 						<article class="card">
 						<div class="card__thumb">
 							<img src="assets-gulp/build/img/int/2-2.jpg" alt="">

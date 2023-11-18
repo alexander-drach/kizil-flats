@@ -21,18 +21,6 @@
         @include vp-639 {
             grid-template-columns: repeat(1, 1fr);
         }
-
-        li {
-            &:hover {
-                .card {
-                    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.20);
-                }
-
-                .card__title {
-                    color: $color-gold;
-                }
-            }
-        }
     }
 
     &--rules {
@@ -116,5 +104,36 @@
                 background-color: $color-torch-red;
             }
         }        
+    }
+
+    &--similar-flats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        @include vp-1023 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include vp-639 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+
+    &--flat-features {
+        width: 100%;
+        column-count: 2;
+        margin-bottom: 60px;
+
+        @include vp-639 {       
+            column-count: 1;
+        }
+        
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+        }
     }
 }
