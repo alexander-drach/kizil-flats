@@ -14,7 +14,7 @@
 					<br>и наш менеджер тут же с вами свяжется
 				</p>
 			</div>
-			<button class="btn btn-primary" type="button">Забронировать</button>
+			<a class="btn btn-primary" href="#" data-open-modal="feedback">Забронировать</a>
 		</div>
 	</section>
 	<div class="filter">

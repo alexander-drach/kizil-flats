@@ -1,52 +1,71 @@
 .custom-input,
 .custom-textarea {
   position: relative;
+  width: 100%;
+  margin-bottom: 15px;
 
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
 
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
+  &--address {
+    margin-bottom: 30px;
+
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &--message {
+    margin-top: 30px;
+
+    @include vp-767 {
+      margin-top: 10px;
+    }
   }
 
   label {
     display: flex;
     align-items: center;
     width: 100%;
+    font-size: 16px;
+    color: $color-middle-grey;
+    margin-bottom: 5px;
 
-    @media screen and (max-width: 767px) {
-      align-items: flex-start;
-      flex-direction: column;
+    @include vp-767 {
+      font-size: 14px;
+      margin-bottom: 0;
     }
 
-    input,
-    textarea {
-      flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
+    span {
+      color: #ff0000;
+    }
+  }
 
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
-      outline: none;
+  input,
+  textarea {
+    width: 100%;
+    flex-grow: 1;
+    padding: 7px 20px;
+    color: $color-middle-grey;
 
-      transition: border 0.3s ease;
+    border: 1px solid rgba(#000000, 0.2);
+    border-radius: 4px;
+    outline: none;
 
-      @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
-      }
+    transition: border 0.3s ease;
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
+    @media screen and (max-width: 767px) {
+      max-width: unset;
+      width: 100%;
+    }
+  }
 
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
+  textarea {
+    min-height: 150px;
+
+    @include vp-767 {
+      min-height: 100px;
     }
   }
 
@@ -73,6 +92,7 @@
   }
 
   &.is-invalid {
+
     input,
     textarea {
       border: 2px solid #ff1553;
@@ -98,7 +118,8 @@
   .input-message {
     position: absolute;
     right: 0;
-    bottom: -5px;
+    bottom: -18px;
+    font-size: 10px;
 
     &.is-invalid {
       color: #ff0000;

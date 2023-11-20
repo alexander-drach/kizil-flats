@@ -39,6 +39,50 @@
 </footer>
 </div>
 
+<div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <p class="modal__description">Оставить заявку</p>
+                <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal></button>
+            </div>
+            <div class="modal__form" data-form-validate data-callback="base" data-parent-validate="base">
+
+                <form method="post" action="https://echo.htmlacademy.ru" name="contactform">
+                    <div class="custom-input" data-validate-type="phone" data-on-input-validate data-required data-message-base="Поле обязательно к заполнению" data-message-success="Поле заполнено верно">
+                        <label for="tel">Телефон<span>*</span></label>
+                        <input id="tel" name="tel" type="tel" required>
+                    </div>
+
+                    <div class="custom-input custom-input--address">
+                        <label for="address">Адрес</label>
+                        <input id="address" name="address" type="text" value="">
+                    </div>
+
+                    <div class="custom-input">
+                        <label for="date_on">Желаемая дата въезда</label>
+                        <input id="date_on" name="date_on" type="date">
+                    </div>
+
+                    <div class="custom-input">
+                        <label for="date_off">Желаемая дата выезда</label>
+                        <input id="date_off" name="date_off" type="date">
+                    </div>
+
+                    <div class="custom-input custom-input--message">
+                        <label for="message">Описание заявки</label>
+                        <textarea id="message" name="message" type="text"></textarea>
+                    </div>
+
+                    <button class="btn btn--modal" type="submit">Отправить</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="assets-gulp/build/js/vendor.min.js"></script>
 <script src="assets-gulp/build/js/main.min.js"></script>
 </body>
