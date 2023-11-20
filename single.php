@@ -88,36 +88,7 @@ $flat_features = [
                         <div class="flat-price">
                             <h3>СТОИМОСТЬ АРЕНДЫ</h3>
                             <div class="flat-price__row">
-                                <p>1-3 суток:
-                                    <span>
-                                        <span>2300</span>
-                                        руб.
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="flat-price__row">
-                                <p>4-9 суток:
-                                    <span>
-                                        <span>2200</span>
-                                        руб.
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="flat-price__row">
-                                <p>10-29 суток:
-                                    <span>
-                                        <span>2100</span>
-                                        руб.
-                                    </span>
-                                </p>
-                            </div>
-                            <div class="flat-price__row">
-                                <p>от 30 суток:
-                                    <span>
-                                        <span>2000</span>
-                                        руб.
-                                    </span>
-                                </p>
+                                <p><span>2000</span> руб.</p>
                             </div>
                         </div><!-- flat-price -->
                     </div><!-- location-price -->

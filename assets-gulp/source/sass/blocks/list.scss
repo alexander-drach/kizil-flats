@@ -4,6 +4,10 @@
     padding-left: 0;
     list-style-type: none;
 
+    li {
+        margin-bottom: 6px;
+    }
+
     &--main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -103,7 +107,7 @@
                 height: 7px;
                 background-color: $color-torch-red;
             }
-        }        
+        }
     }
 
     &--similar-flats {
@@ -126,14 +130,58 @@
         column-count: 2;
         margin-bottom: 60px;
 
-        @include vp-639 {       
+        @include vp-639 {
             column-count: 1;
         }
-        
+
         li {
             display: flex;
             align-items: center;
             margin-bottom: 7px;
         }
+    }
+
+    &--features {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+
+        @include vp-1439 {
+            padding: 0 22px;
+        }
+
+        @include vp-1023 {
+            padding: 0 4px;
+        }
+
+        @include vp-767 {
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 5);
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 40px;
+
+            @include vp-1439 {
+                width: calc(100% / 3);
+            }
+
+            @include vp-1023 {
+                width: calc(100% / 2);
+            }
+
+            // @include vp-639 {
+            //     width: 100%;
+            // }
+        }       
     }
 }

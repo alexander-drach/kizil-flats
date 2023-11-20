@@ -140,6 +140,7 @@
 }
 
 .flat-price {
+    font-size: 22px;
     @include vp-1023 {
         width: 50%;
     }
